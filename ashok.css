@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+    body{
+        background: url(https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaHxlbnwwfHwwfHx8MA%3D%3D) no-repeat  ;
+        background-size: contain;
+        transition: all 0.3s ease-in;
+    }
+
+#nav{
+    color: white;
+    font-size: 40px;
+    background-color: transparent;
+    position:fixed;
+    top:0;
+    z-index: 9;
+    align-items: center;
+
+    width: 100vw;
+    height: 85px;
+}
+#nav  h1{ 
+    position: absolute;
+    left: 2px;
+    top: 4px;
+}
+
+
+#page{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     text-align: center;   
+     background-color: transparent;
+    
+    height: 100vh;
+    width: 100vw;
+   
+}
+    color: white;
+}
+#asok{ font-size: 300px;
+font-weight: 1000;
+
+     text-transform: uppercase;
+     animation: cool 1s ease-in 1 forwards;
+     transition:all 0.5;
+     
+    
+}
+@keyframes cool { from{
+color:white;
+transform: scale(0);
+}
+to{
+    background: linear-gradient(to right, red, rgb(47, 0, 255));
+    -webkit-background-clip: text;
+   color: transparent;
+   
+   transform: scale(1);
+}
+    
+}
+#list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transform: scaleX(0);
+    font-size: 20px;
+    text-transform: uppercase;
+    position: absolute;
+    right: 55px;
+    top:25px;
+    width: 30%;
+    transition: all 0.5s ease-in-out;
+}
+#list p:hover{
+    background: linear-gradient(to right, red, rgb(47, 0, 255));
+    -webkit-background-clip: text;
+   color: transparent;
+   cursor: pointer;
+}
+.cross{
+    position: absolute;
+    right:12px;
+    top:20px;
+    font-size: 33px;
+
+    
+}
+.crossi{
+    display: none;
+}
+.menu:hover{ cursor: pointer;
+    
+}
+/* .cross .crossi{ display: none;} */
+.container{
+    height: 50vh;
+    width: 100%;
+    /* border: 2px solid white; */
+    display: flex;
+    /* align-items: center; */
+  
+    align-items: flex-start;
+    overflow: hidden;
+    gap: 20px;
+
+}
+.box{
+    height:80%;
+    width: 2500px;
+    /* border: 2px solid white; */
+    box-sizing: border-box;
+    /* background: url(https://images.unsplash.com/photo-1503444200347-fa86187a2797?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGludGVybmV0fGVufDB8fDB8fHww) no-repeat;
+    background-size: cover; */
+   align-self: flex-end; 
+}
+.box video{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: 6;
+  }
+.box:nth-child(2){
+    background: url(https://media.istockphoto.com/id/1409519679/photo/group-of-women-discussing-in-a-co-working-office.webp?a=1&b=1&s=612x612&w=0&k=20&c=QYMkw-Q99pmTg4sx0CxafveuzdExp8x6Ew88hwnCd-c=) no-repeat;
+    background-size: cover;
+}
+#page:nth-child(3) p{
+    font-size: 100px;
+    font-weight: 900;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    
+    
+}
+#page:nth-child(3) p:hover{
+    font-style: italic;
+    background: linear-gradient(to right, red, rgb(47, 0, 255));
+    -webkit-background-clip: text;
+   color: transparent;
+}
